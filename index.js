@@ -13,6 +13,14 @@ database.mongoose
 		process.exit();
 	});
 
+// SET SECRETKEY
+require('./config/secret-key')(app);
+
+// MIDDLEWARES
+require('./middlewares/body-parser')(app);
+require('./middlewares/cors')(app);
+require('./middlewares/handle-error')(app);
+
 app.listen(database.port, () => {
 	console.log(`Server is running on PORT:${database.port}`);
 });

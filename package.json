@@ -4,8 +4,8 @@
   "description": "Simple Mock API by hattaalfaritzy",
   "main": "index.js",
   "scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "nodemon index.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "author": "hattaalfaritzy",
   "license": "ISC",
@@ -15,6 +15,7 @@
     "cloudinary": "^1.32.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
+    "express": "^4.18.2",
     "firebase-admin": "^11.3.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.8.0",
