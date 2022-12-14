@@ -1,5 +1,6 @@
+// HANDLE ERROR MIDDLEWARES
+
 module.exports = app => {
-	// HANDLE ERROR MIDDLEWARES
 	app.use((err, req, res, next) => {
 		res.status(err.status || 500);
 		res.send({

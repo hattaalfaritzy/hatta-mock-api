@@ -1,5 +1,6 @@
+// CORS MIDDLEWARES
+
 module.exports = app => {
-	// CORS MIDDLEWARES
 	const cors = require('cors');
 
 	app.use(cors());

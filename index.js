@@ -3,6 +3,8 @@ const database = require('./config');
 
 const app = express();
 
+database.mongoose.set("strictQuery", false);
+
 database.mongoose
 	.connect(database.url, { useNewUrlParser: true, useUnifiedTopology: true })
 	.then(() => {
@@ -20,6 +22,17 @@ require('./config/secret-key')(app);
 require('./middlewares/body-parser')(app);
 require('./middlewares/cors')(app);
 require('./middlewares/handle-error')(app);
+
+// PUBLIC ROUTES
+require('./src/routes/public/auth')(app);
+require('./src/routes/public/lists')(app);
+require('./src/routes/public/products')(app);
+
+// PRIVATE ROUTES
+require('./src/routes/private/lists')(app);
+require('./src/routes/private/roles')(app);
+require('./src/routes/private/users')(app);
+require('./src/routes/private/products')(app);
 
 app.listen(database.port, () => {
 	console.log(`Server is running on PORT:${database.port}`);
