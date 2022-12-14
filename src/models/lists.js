@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const listSchema = new Schema(
+const listsSchema = new Schema(
 	{
 		name: String,
 		phone: String,
@@ -12,4 +12,4 @@ const listSchema = new Schema(
 	}
 );
 
-module.exports = mongoose.model('listSchema', listSchema);
+module.exports = mongoose.model('listsSchema', listsSchema);

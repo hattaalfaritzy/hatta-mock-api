@@ -3,7 +3,7 @@ const bcrypt = require('bcryptjs');
 const salt = bcrypt.genSaltSync(10);
 const Schema = mongoose.Schema;
 
-const userSchema = new Schema(
+const usersSchema = new Schema(
 	{
 		email: String,
 		password: String,
@@ -14,9 +14,9 @@ const userSchema = new Schema(
 	}
 );
 
-userSchema.pre('save', function(next) {
+usersSchema.pre('save', function(next) {
     this.password = bcrypt.hashSync(this.password, salt);
     next();
 });
 
-module.exports = mongoose.model('userSchema', userSchema);
+module.exports = mongoose.model('usersSchema', usersSchema);
