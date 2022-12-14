@@ -16,7 +16,7 @@ https://hatta-mock-api.vercel.app/
 
 ## Setup .env file
 
-Create `.env` file on code editor similar to `.env.example` or copy the code below : (see [official docs](https://nextjs.org/docs/basic-features/environment-variables))
+Create `.env` file on code editor similar to `.env.example` or copy the code below : (see [official docs](https://nodejs.dev/en/learn/how-to-read-environment-variables-from-nodejs))
 ```
 DB_CONNECTION = 
 DB_PORT = 
