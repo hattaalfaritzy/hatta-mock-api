@@ -12,7 +12,11 @@ https://hatta-mock-api.vercel.app/
 2. Run `yarn install` to install dependencies.
 3. Go to the project directory.
 4. Configure environment variables
-  - Configure `.env` file (see [official docs](https://nextjs.org/docs/basic-features/environment-variables)) similar to `.env.example`.
+5. Run `yarn start`.
+
+## Setup .env file
+
+Create `.env` file on code editor similar to `.env.example` or copy the code below : (see [official docs](https://nextjs.org/docs/basic-features/environment-variables))
 ```
 DB_CONNECTION = 
 DB_PORT = 
@@ -23,7 +27,6 @@ CLOUDINARY_API_KEY =
 CLOUDINARY_API_SECRET = 
 GOOGLE_DATABASE_URL = 
 ```
-5. Run `yarn start`.
 
 ## Scripts
 
