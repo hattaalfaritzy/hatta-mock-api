@@ -41,9 +41,9 @@ GOOGLE_DATABASE_URL =
 ├── 📂 src/
 │   ├── 📂 controllers/        Controllers files
 │   ├── 📂 models/             Models files which create a schema for MongoDB
-│   ├── 📂 routes/             
-│   │   ├── 📂 private/        Express.js routes for private access
-│   │   └── 📂 public/         Express.js routes for public access
+│   └── 📂 routes/             
+│       ├── 📂 private/        Express.js routes for private access
+│       └── 📂 public/         Express.js routes for public access
 ├── .env.example               Specify which environment variables are server-only and which should be exposed to the browser
 ├── .gitignore
 ├── index.js                   The startup, routing and other functions for the application
