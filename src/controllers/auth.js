@@ -84,11 +84,6 @@ exports.register = (req, res, next) => {
 					data: data
 				});
 			}).catch(err => {
-				res.json({ 
-					status: 'Error', 
-					message: 'User Not Found!', 
-					data: null
-				});
 				next(err);
 			})
         }

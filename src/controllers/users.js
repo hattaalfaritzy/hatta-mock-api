@@ -27,6 +27,26 @@ exports.get_data_detail = (req, res, next) => {
 	});
 };
 
+exports.create_data = (req, res, next) => {
+    const new_data = new usersModel(req.body);
+    new_data.save((err, result) => {
+        if (err) {
+            next(err);
+        }
+        else {
+			firebase.auth().createUser(req.body)
+			.then(data => {
+				res.json({
+					message: 'New User Registered!',
+					data: data
+				});
+			}).catch(err => {
+				next(err);
+			})
+        }
+    });
+};
+
 exports.update_data = function(req, res, next) {
 	const update_data = req.body;
     usersModel.findOneAndUpdate({ _id: req.params.id}, update_data, {new: true}, (err, result) => {

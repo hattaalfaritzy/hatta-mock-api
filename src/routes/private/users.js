@@ -5,6 +5,7 @@ module.exports = app => {
 
 	router.get('/', usersController.get_all_data);
 	router.get('/:id', usersController.get_data_detail);
+	router.post('/', usersController.create_data);
 	router.put('/:id', usersController.update_data);
 	router.delete('/:id', usersController.delete_data);
 
