@@ -4,17 +4,17 @@ const salt = bcrypt.genSaltSync(10);
 const Schema = mongoose.Schema;
 
 const usersSchema = new Schema(
-	{
-		email: String,
-		password: String,
-		role: String,
-	},
-	{
-		timestamps: true,
-	}
+    {
+        email: String,
+        password: String,
+        role: String,
+    },
+    {
+        timestamps: true,
+    }
 );
 
-usersSchema.pre('save', function(next) {
+usersSchema.pre('save', (next) => {
     this.password = bcrypt.hashSync(this.password, salt);
     next();
 });
