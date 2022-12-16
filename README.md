@@ -31,11 +31,14 @@ GOOGLE_DATABASE_URL =
 ## Scripts
 
 - `yarn start` - Run the application
+- `yarn lint` - Run [ESLint](https://eslint.org/)
+- `yarn lint:fix` - Fix codes from ESLint errors
 
 ## File Structure
 
 ```raw
 .
+├── 📂 .vscode/                Configuration VS Code for the workspace
 ├── 📂 config/                 Configuration files for the application (e.g. firebase, cloudinary)
 ├── 📂 middlewares/            Middlewares files for the application (e.g. cors, body-parser)
 ├── 📂 src/
@@ -45,10 +48,12 @@ GOOGLE_DATABASE_URL =
 │       ├── 📂 private/        Express.js routes for private access
 │       └── 📂 public/         Express.js routes for public access
 ├── .env.example               Specify which environment variables are server-only and which should be exposed to the browser
+├── .eslintrc.js               ESLint configuration
 ├── .gitignore
+├── README.md                  Information about the application
 ├── index.js                   The startup, routing and other functions for the application
 ├── package.json
-└── vercel.js                  Vercel configuration
+└── vercel.json                Vercel configuration
 
 Notes:
 📂: Folder
