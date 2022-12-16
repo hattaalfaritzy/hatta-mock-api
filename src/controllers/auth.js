@@ -41,6 +41,7 @@ exports.authenticateFirebase = (req, res, next) => {
 			next(err);
 		} else {
 			if (userInfo !== null) {
+				console.log(userInfo, 'cek user info');
 				if (bcrypt.compareSync(req.body.password, userInfo.password)) {
 					const token = jwt.sign({}, config.secret_key, { expiresIn: '1d' });
 					firebase.auth().createCustomToken(token);
@@ -48,7 +49,7 @@ exports.authenticateFirebase = (req, res, next) => {
 						status: 'Success',
 						message: 'User Found!',
 						data: {
-							data: userInfo, 
+							userInfo, 
 							token: token
 						} 
 					});
