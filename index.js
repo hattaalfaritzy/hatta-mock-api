@@ -29,6 +29,7 @@ require('./src/routes/public/lists')(app);
 require('./src/routes/public/products')(app);
 
 // PRIVATE ROUTES
+require('./src/routes/private/auth')(app);
 require('./src/routes/private/lists')(app);
 require('./src/routes/private/roles')(app);
 require('./src/routes/private/users')(app);

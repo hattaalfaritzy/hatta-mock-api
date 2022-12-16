@@ -42,8 +42,8 @@ exports.authenticateFirebase = (req, res, next) => {
 		} else {
 			if (userInfo !== null) {
 				if (bcrypt.compareSync(req.body.password, userInfo.password)) {
-					const token = jwt.sign({ data: userInfo }, config.secret_key, { expiresIn: '1d' });
-					firebase.auth().verifyIdToken(token);
+					const token = jwt.sign({}, config.secret_key, { expiresIn: '1d' });
+					firebase.auth().createCustomToken(token);
 					res.json({
 						status: 'Success',
 						message: 'User Found!',
