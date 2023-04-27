@@ -55,7 +55,7 @@ exports.create_data = (req, res, next) => {
 };
 
 exports.updateData = (req, res, next) => {
-    upload(req, res, (err) => {
+    images.upload(req, res, (err) => {
         const updateData = req.body;
 
         if (req.file != null) {

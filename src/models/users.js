@@ -7,14 +7,16 @@ const usersSchema = new Schema(
     {
         email: String,
         password: String,
-        role: String,
+        name: String,
+        phone: String,
     },
     {
         timestamps: true,
     }
 );
 
-usersSchema.pre('save', (next) => {
+// eslint-disable-next-line func-names
+usersSchema.pre('save', function(next) {
     this.password = bcrypt.hashSync(this.password, salt);
     next();
 });
