@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "hatta-mock-api",
+  "private_key_id": "1f2abf6a1ebb596e26865b1d0eb670d7ddd7f21d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCirE3/wDBCdrCg\nUz7mTiraDVJFh2MVZ3Nh4lVa7vPdDUMduilLkT+5+0QIVJRumHvjFr09SMs3Tjs9\neQG23kDg+joSTboQbFJtYoTX+azX3IaEhB2VH+/209yoTedOEOrrI3JHcnzY/jXi\nVuRRpB6+ib9wmDDdniqEmKR5Du78PWVPa6iqz0xID+kh+Li7dsN+dj0uH6ZHjMJA\n9fcZPG06SUMet5jPHRRDoD4UT3nfg3Vh+/JTORIUFAPP09rOY5USswTT2k6wO7Qp\nR2a4s5FlyQwlM26eMcZJ9f/io0eEXmUwJpSbY65cWhPKm4WacFYTMLqcB1X6Bb6J\n1GXvgdJTAgMBAAECggEAFElirMtd+Vvt6QCYroX/CBRzNyKMM8Yj+IgOVvnHxcB6\np0FpFvh1Nw9jy5oorKYthQN39CWY2jvSXXcyxIhxFN1/0nqJArVPjj6kDH8hlAX3\nbJ1BRzClb2W6de7JMs4fTdWs0cYwVatWMvTdImVSRDbPfg4sweaQrNqQYFyBZ0lZ\n3cgCP80Ezfpi9+ZYlmjCawobRT1bucqiydlMINDkjaF67SExPkfvBlJxp+AfkxEY\nOkKyinEkum/HPPiWpT6oEJ7cd24Igvv2fGbgR99qLKTiE8vTE3AMlTiWsVd4/M2X\n5Jgwj1/QbIEmxTzxChkCNifgfCsVj/phTYC6F2wmQQKBgQDVy9uQUy1bSuJLuW6+\neo9LgA5kxMUgkQ1ugQLurmRzAtqSoCU/jebiCcsbmSl/N8qT1VZVcgxjHzRZ5U+i\nZLDKjJz+9OurZGTb+9XywYacPW43lalc/a+MEmulfYz666tsXIaaj7ft2SgW9Q/J\nRZQyilEj1KJx5IgBUJFI4PcicwKBgQDCyPJKZuDZf0FRiTLaoBU0h/VR7rywRpH6\nLuQ3zhK6JTOY87b0AU7WaUWNaBRsoeAOdHfbTR9NpnUNN3tOL/YYAeAdKm94QiVK\n/rLNTjsVKuPgKP33duCCCATDxDV0dinR0vbsbxPH5Qd5ZGLZ1hB4IcmspANUT6C3\nvvJASkQ4oQKBgQCCTzunbxshHrZpYz+dt8PpR8b+InToUaD3LokkA4VUGHQylIu/\nffUw5rk2PBdv5AiELK7va5EjRVy6QitUlryu6B+0woF2OL3E221fBhfO2R55oK3W\n8QTzgjK8bpbkRYp5hLfCM0DvJsHppDqX+eHHIEkuZqcQdjNzYbD706quAwKBgGu8\nq88dUjba3S0VHuyv6KqynK0hyHoTvoBL2W1IbTFKjFyISORzqMCNX6wUKl/ftUcp\ngnXpFWxkqo+R5YDcpFipCOX458jzhR8S+6D1KVbO71W4NqjettUVTFVfvFVbWkw1\nTOB/m8hP1K9/J/HnJhrcTWlRGopStMmNMv7+VPehAoGBAJkbhnwyJvB4Lpyrrt9j\nC1Pjn0RkF5HtiC0ITi7PTB2zGbbmag4gCLMJmvGAzAyEee5gAuk22zjjgW1D7Xls\nqB+eC0jwLuKKEbidMMzF0G+hXYdooyaAS0zUVdiWhnamDwYYfiae1mok7xPMJi3r\nKDj5p8KDHMJjX3OrRJFrRVB3\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-g01fe@hatta-mock-api.iam.gserviceaccount.com",
+  "client_id": "112709703740540981409",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-g01fe%40hatta-mock-api.iam.gserviceaccount.com"
+}

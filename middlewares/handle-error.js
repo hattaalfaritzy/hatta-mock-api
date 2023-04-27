@@ -1,13 +1,14 @@
 // HANDLE ERROR MIDDLEWARES
 
-module.exports = app => {
-	app.use((err, req, res, next) => {
-		res.status(err.status || 500);
-		res.send({
-			error: {
-				status: err.status || 500,
-				message: err.message
-			}
-		})
-	});
-}
+module.exports = (app) => {
+    app.use((err, req, res, next) => {
+        res.status(err.status || 500);
+        res.send({
+            error: {
+                status: err.status || 500,
+                message: err.message,
+            },
+        });
+        next(err);
+    });
+};

@@ -6,5 +6,5 @@ module.exports = (app) => {
     router.post('/login/firebase', authController.authenticateFirebase);
     router.post('/register', authController.register);
 
-    app.use('/auth', router);
+    app.use('/private/auth', authController.validateUser, router);
 };
